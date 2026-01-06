@@ -11,57 +11,61 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet" />
 
-		<!-- CSS -->
+		<!-- AOS ANIMATION -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- LOGO -->
 		<link rel="icon" href="images/header/logo.svg" />
+		<!-- CSS -->
 		<link rel="stylesheet" href="css/stayl.css" />
 	</head>
 	<body>
 		<div class="site-top">
-			<header class="site-header">
+			<header class="site-header" data-aos="fade-down" data-aos-delay="100">
 				<div class="site-header-container container">
-					<a class="logo" href="/" data-aos="fade-up-right"
-						><img src="images/header/logo.svg" alt="logo" />
+					<a class="logo" href="/" data-aos="fade-up-right" data-aos-delay="200">
+						<img src="images/header/logo.svg" alt="logo" />
 						<h2>Gulandom</h2>
 					</a>
-					<ul class="sitenav" data-aos="fade-left">
-						<li class="sitenav-item">
+
+					<ul class="sitenav" data-aos="fade-left" data-aos-delay="300">
+						<li class="sitenav-item" data-aos="fade-up" data-aos-delay="400">
 							<a class="sitenav-link" href="#">ABOUT</a>
 						</li>
-						<li class="sitenav-item">
+						<li class="sitenav-item" data-aos="fade-up" data-aos-delay="500">
 							<a class="sitenav-link" href="#">WHAT I DO</a>
 						</li>
-						<li class="sitenav-item">
+						<li class="sitenav-item" data-aos="fade-up" data-aos-delay="600">
 							<a class="sitenav-link" href="#">WORK</a>
 						</li>
-						<li class="sitenav-item">
+						<li class="sitenav-item" data-aos="fade-up" data-aos-delay="700">
 							<a class="sitenav-link" href="#">CONTACT</a>
 						</li>
 					</ul>
 				</div>
 			</header>
 
-			<section class="hero">
+			<section class="hero" data-aos="fade-down" data-aos-delay="100">
 				<div class="hero-container">
-					<h1 class="hero-title" data-aos="fade-up-right">I'm GULANDOM</h1>
-					<p class="hero-text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+					<h1 class="hero-title" data-aos="fade-up-right" data-aos-delay="300">I'm GULANDOM</h1>
+
+					<p class="hero-text" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-out-cubic">
 						Front-End Development - UI/UX Designer
 					</p>
 
-					<ul class="social">
-						<li class="social-item">
+					<ul class="social" data-aos="fade-up" data-aos-delay="650">
+						<li class="social-item" data-aos="zoom-in" data-aos-delay="800">
 							<a class="social-link" href="#" target="_blank">
 								<img src="images/hero/instagram.svg" alt="instagram" width="22" height="22" />
 							</a>
 						</li>
 
-						<li class="social-item">
+						<li class="social-item" data-aos="zoom-in" data-aos-delay="950">
 							<a class="social-link" href="#" target="_blank">
 								<img src="images/hero/facebook.svg" alt="facebook" width="22" height="22" />
 							</a>
 						</li>
 
-						<li class="social-item">
+						<li class="social-item" data-aos="zoom-in" data-aos-delay="1100">
 							<a class="social-link" href="https://github.com/gulandomhaydarova4-lab" target="_blank">
 								<img src="images/hero/github.svg" alt="github" width="22" height="22" />
 							</a>
@@ -72,23 +76,38 @@
 		</div>
 
 		<main class="main-content">
-			<section class="about-me">
+			<section class="about-me" data-aos="fade-up" data-aos-delay="100">
 				<div class="container about-me-continer">
-					<div class="about-me-img">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, vitae animi saepe esse quaerat beatae nobis
-						expedita repellat fugit tempora cupiditate nisi quis reiciendis molestias ex quidem! Placeat, qui nihil.
+					<div class="about-me-img" data-aos="fade-right" data-aos-delay="300">
+						<img src="images/hero/about-image.png" alt="about-image" width="556" height="406" />
 					</div>
+
 					<div class="about-me-info">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reprehenderit nihil impedit illo animi dicta ipsam
-						architecto omnis facere iure officia ratione, neque rem quis asperiores deserunt sit excepturi fuga!
+						<h3 class="about-me-title3" data-aos="fade-up" data-aos-delay="450">ABOUT ME</h3>
+
+						<h2 class="about-me-title2" data-aos="fade-up" data-aos-delay="550">I’m Gulandom</h2>
+
+						<p class="about-me-text" data-aos="fade-up" data-aos-delay="700">
+							Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+							Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+						</p>
+
+						<p class="about-me-text" data-aos="fade-up" data-aos-delay="850">
+							Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+							Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+						</p>
 					</div>
 				</div>
 			</section>
 		</main>
 		<!-- JS -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 		<script>
-			AOS.init();
+			AOS.init({
+				duration: 900,
+				easing: 'ease-out-cubic',
+				once: true,
+			});
 		</script>
 	</body>
 </html>
